@@ -137,7 +137,7 @@ footer {
 }
 
 @media (max-width:425px){
-    .st1 {
+    .logo-name {
       display: none;
     }
 
