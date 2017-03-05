@@ -55,10 +55,11 @@ main {
 }
   main h2 {
   font-size: 28px;
-}å
-  main ul {
+}
+
+main ul {
     padding: 0;
-  }
+}
     main li {
       display: inline-block;
       margin-right: 20px;
@@ -105,10 +106,11 @@ footer {
   fill:#39ADD1;
 }
 
-.visit-icon:hover,
-.heart-icon:hover,
-.contact-icon:hover{
-  fill:red;
+
+a:hover svg .heart-icon,
+a:hover svg .visit-icon,
+a:hover svg  .contact-icon{
+      fill:red;
 }
 
 /*Logo*/
@@ -118,10 +120,17 @@ footer {
   height: 120px;
 }
 
-.logo{fill:#BA8058;}
+.logo{
+  fill:#BA8058;
+}
 
 .logo-name{
   fill:#EAAA7F;
+  display: none;
+}
+
+.logo-title{
+  display: block;
 }
 
 .paw{
@@ -136,13 +145,13 @@ footer {
   height: 170px;
 }
 
-@media (max-width:425px){
+@media (min-width:425px){
     .logo-name {
-      display: none;
+      display: block;
     }
 
     .logo-title {
-        display: block;
+        display: none;
     }
 
 }
